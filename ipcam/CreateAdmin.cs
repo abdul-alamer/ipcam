@@ -57,11 +57,11 @@ namespace AlertSystem
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("abdulrahmansadaqa@gmail.com", "24534801"),
+                Credentials = new NetworkCredential(/*email*/, /*password*/),
                 EnableSsl = true,
             };
 
-            smtpClient.Send("abdulsadaqa1@gmail.com",AdminModel.getEmail(), subject, body);
+            smtpClient.Send(/*email*/,AdminModel.getEmail(), subject, body);
         }
         private static String generateRndom()
         {
